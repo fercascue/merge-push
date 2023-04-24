@@ -4,7 +4,7 @@
 	<artifactId>lambda1</artifactId>
 	<version>1.0.0</version>
 
-	<build>
+<build>
 		<plugins>
 			<plugin>
 				<artifactId>maven-assembly-plugin</artifactId>
