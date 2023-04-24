@@ -1,0 +1,20 @@
+name: release-please
+on:
+    push:
+      branches:
+        - develop  
+permissions:
+    contents: write
+    pull-requests: write
+  
+jobs:
+    release-please:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Create Release
+          id: release
+          uses: google-github-actions/release-please-action@v3
+          with:
+            release-type: maven
+            package-name: customer-portal-back
+        
